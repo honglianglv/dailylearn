@@ -1,0 +1,2 @@
+test: SplitWord.cpp ../include/NLPIR.h
+	g++ -g SplitWord.cpp ./libNLPIR.so  -m64  -O3 -DOS_LINUX -o SplitWord

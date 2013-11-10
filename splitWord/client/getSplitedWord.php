@@ -60,6 +60,6 @@ class CASSplitWord {
 }
 $obj = new CASSplitWord();
 $str = "南京市长江大桥@领袖未来俱乐部 ： @ICTCLAS张华平博士 是计算机领域的专家学者，专注于中文自然语言处理、信息检索、信息安全的学术交流与产业应用。吴裕待@简凡如是 来北京学习深造，在学习过程中多请教。也请@吴永夷 关注。";
-$str = file_get_contents('test.txt');
+//$str = file_get_contents('test.txt');
 $ret = $obj->splitWord($str, "GET");
 var_dump($ret);die;

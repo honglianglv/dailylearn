@@ -2,8 +2,10 @@
 
 awk -F"\t" '
 BEGIN {
-    docId1="";
-    docId2="";
+    FS = "\t";
+    OFS = "\t";
+    docId1 = "";
+    docId2 = "";
 }
 {
     if (docId1 == "" || docId1 != $1 || docId2 != $2) {

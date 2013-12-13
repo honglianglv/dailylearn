@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <cstdio>
 using namespace std;
 
 double fx(double x, int n) {
@@ -18,9 +19,9 @@ int main(int argc, char**argv) {
     cout << n << endl;
     int iterNum = atoi(argv[2]);
     cout << iterNum << endl;
-    double x = 0.0;
+    double x = 0.5;
     for (int i=0; i<iterNum; ++i) {
         x = x - fx(x, n)/fxDifferential(x);
     }
-    cout <<"the square root of "<< n << " is:" << x << endl;
+    printf("the square root of %d is: %.30f\n", n, x);
 }
